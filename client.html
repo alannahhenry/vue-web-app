@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <input id="input"/>
+            <button id="getWeather" onclick="get_weather(document.getElementById('input').value)">Get Weather</button>
+        </div>
+
+        <script>
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    message: 'Hello world!'
+                }
+            });
+
+            function get_weather(city){
+                console.log(city);
+            }
+        </script>
+    </body>
+</html>
